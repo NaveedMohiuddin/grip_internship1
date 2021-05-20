@@ -18,7 +18,7 @@ const Transfer = (props) => {
            const updateData = response.data[0];
            bal = updateData.Amount;
             const updatedAmt = updateData.Amount+parseInt(amount);
-            axios.put(`https://banking-world.herokuapp.com//customers/${updateData._id}`,{
+            axios.put(`https://banking-world.herokuapp.com/customers/${updateData._id}`,{
                 Accountno : updateData.Accountno,
                 name : updateData.name,
                 email : updateData.email,
