@@ -1,1 +1,0 @@
-# grip_internship1
