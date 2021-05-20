@@ -29,7 +29,7 @@ const Home = () => {
 
     const showTransfer = () => {
         if (tstate === false) {
-            axios.get('https://banking-world.herokuapp.com//transfer').then((response) => {
+            axios.get('https://banking-world.herokuapp.com/transfer').then((response) => {
                 const customerData = response.data;
                 setTransfer(customerData);
             }).catch((err) => { console.log(err); });
